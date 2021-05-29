@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "death-origin",
+  "version": "${version}",
+  "name": "Death Origin",
+  "description": "Get origin orb on death",
+  "authors": [
+    "CodeHz"
+  ],
+  "contact": {
+    "website": "https://github.com/codehz/death-origin-fabric",
+    "repo": "https://github.com/codehz/death-origin-fabric"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/death-origin/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "one.codehz.mcmod.deathorigin.DeathOrigin"
+    ]
+  },
+  "mixins": [
+    "death-origin.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.16.5",
+    "origins": ">=0.6.0"
+  }
+}
